@@ -4,6 +4,8 @@ import { defineConfig } from "vitepress";
 export default defineConfig({
   title: "kerry.wu.blog",
   description: "blog",
+  // 防止部署后无法访问
+  base: '/kerry.wu.blog/',
   themeConfig: {
     socialLinks: [
       { icon: "github", link: "https://github.com/vuejs/vitepress" },
