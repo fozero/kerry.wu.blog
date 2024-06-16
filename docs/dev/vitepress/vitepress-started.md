@@ -240,3 +240,9 @@ jobs:
 3. 当提交代码到main分支时，会自动进行发布
 
 4. 最后，发布成功后访问我们的网页
+
+注：由于github部署成功后访问的网页地址是：https://fozero.github.io/kerry.wu.blog/
+
+防止链接无法跳转，我们还需要设置base根目录才能正常访问
+
+`base: '/kerry.wu.blog/'`
