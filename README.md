@@ -1,9 +1,17 @@
 # kerry.wu.blog
 new blog
 
-## blog visit
+blog visit：https://fozero.github.io/kerry.wu.blog/
 
-https://fozero.github.io/kerry.wu.blog/
+## 开发
+
+```yarn docs:dev```
+
+## 构建
+```
+yarn docs:build  编译
+yarn docs:preview  预览
+```
 
 ## 报错解决
 
