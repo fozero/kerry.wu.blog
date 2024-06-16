@@ -1,7 +1,9 @@
 # kerry.wu.blog
 new blog
 
+## blog visit
 
+https://fozero.github.io/kerry.wu.blog/
 
 ## 报错解决
 
