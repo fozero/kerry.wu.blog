@@ -1,4 +1,5 @@
 import Knex from "knex";
+import { Model } from 'objection';
 
 const dbConfig = {
   debug: true,
@@ -14,5 +15,6 @@ const dbConfig = {
 };
 
 const knex = Knex(dbConfig);
+Model.knex(knex);
 
 export default knex;

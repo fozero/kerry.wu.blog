@@ -1,5 +1,6 @@
 "use strict";
 import knex from "../db/knex.js";
+import users from "../apps/users/users.api.js";
 
 const testOpts1 = {
   schema: {
@@ -90,10 +91,12 @@ export default async function (fastify, opts) {
   });
 
   // select
-  fastify.get("/users", async (request, reply) => {
-    const res = await knex.select("*").from("users");
-    reply.send({ users: res });
-  });
+  // fastify.get("/users", async (request, reply) => {
+  //   const res = await knex.select("*").from("users");
+  //   reply.send({ users: res });
+  // });
+
+  fastify.get("/users", users.getUsers);
 
   // find by id
   fastify.get("/users/:id", async (request, reply) => {
